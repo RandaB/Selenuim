@@ -7,3 +7,4 @@ driver.get("https://rahulshettyacademy.com/angularpractice/")
 
 driver.find_element_by_name("name").send_keys("Randa")
 driver.find_element_by_id("exampleCheck1").click()
+driver.find_element_by_css_selector("input[name='name']").send_keys("Randa")
