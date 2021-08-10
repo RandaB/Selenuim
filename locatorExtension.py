@@ -8,3 +8,5 @@ driver.get("https://login.salesforce.com/")
 driver.find_element_by_css_selector("#username").send_keys("Randa")
 driver.find_element_by_css_selector(".password").send_keys("Randa")
 driver.find_element_by_link_text("Mot de passe oublié ?").click()
+
+driver.find_element_by_xpath("//input[@name = 'cancel']").click()
