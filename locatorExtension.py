@@ -10,3 +10,5 @@ driver.find_element_by_css_selector(".password").send_keys("Randa")
 driver.find_element_by_link_text("Mot de passe oublié ?").click()
 
 driver.find_element_by_xpath("//input[@name = 'cancel']").click()
+
+print(driver.find_element_by_xpath("//form[@name='login']/div[1]/label").text)
