@@ -18,3 +18,9 @@ print(driver.find_element_by_class_name("alert-success").text)
 dropdown = Select(driver.find_element_by_id("exampleFormControlSelect1"))
 dropdown.select_by_visible_text("Female")
 dropdown.select_by_index(0)
+
+driver.find_element_by_xpath("//input[@type='submit']").click()
+
+message = driver.find_element_by_class_name("alert-success").text
+
+assert "success" in message
