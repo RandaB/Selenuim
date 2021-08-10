@@ -12,3 +12,4 @@ driver.find_element_by_link_text("Mot de passe oublié ?").click()
 driver.find_element_by_xpath("//input[@name = 'cancel']").click()
 
 print(driver.find_element_by_xpath("//form[@name='login']/div[1]/label").text)
+print(driver.find_element_by_css_selector("form[name='login'] label:nth-child(3)").text)
