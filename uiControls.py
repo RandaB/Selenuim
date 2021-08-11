@@ -13,3 +13,7 @@ for checkbox in checkboxes:
     if checkbox.get_attribute("value") == "option2":
         checkbox.click()
         assert checkbox.is_selected()
+
+
+radiobuttons = driver.find_elements_by_name('radioButton')
+radiobuttons[2].click()
