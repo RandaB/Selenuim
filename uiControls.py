@@ -17,3 +17,4 @@ for checkbox in checkboxes:
 
 radiobuttons = driver.find_elements_by_name('radioButton')
 radiobuttons[2].click()
+assert radiobuttons[2].is_selected()
